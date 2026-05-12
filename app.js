@@ -2,7 +2,7 @@
 'use strict';
 
 /* ── Constants ──────────────────────────── */
-const TOTAL_FRAMES = 900;
+const TOTAL_FRAMES = 896;
 const PAGE_COUNT = 6;
 const LERP = 0.08;
 const CONCURRENCY = 48;
