@@ -239,6 +239,8 @@ function onReady() {
   isReady = true;
   if (hasFrames) drawFrame(0);
   setTimeout(() => { loader.classList.add('hidden'); initEffects(); }, 400);
+  // Activate first page
+  if (pages[0]) pages[0].classList.add('is-active');
 }
 
 /* ── Effects ─────────────────────────────── */
