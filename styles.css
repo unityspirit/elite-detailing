@@ -54,6 +54,9 @@ body {
 a { color: var(--blue); text-decoration: none; transition: color .3s; }
 a:hover { color: var(--blue-light); }
 
+/* GLOBAL WHITE TEXT */
+p, li, span, strong, em, div, blockquote, label, td, th, figcaption, cite { color: #fff; text-shadow: var(--ts); }
+
 /* ======== CINEMATIC CANVAS ======== */
 #gl-canvas {
   position: fixed;
@@ -576,8 +579,17 @@ a:hover { color: var(--blue-light); }
 
   .hero-stats { gap: 24px; }
   .stat-num { font-size: 1.8rem; }
-  .hero-title { font-size: 3rem; letter-spacing: 4px; }
-  .section-title { font-size: 1.8rem; }
+  .hero-title { font-size: clamp(36px, 10vw, 56px); letter-spacing: 4px; }
+  .section-title { font-size: clamp(28px, 8vw, 42px); }
+  .hero-desc { font-size: clamp(15px, 4.5vw, 20px); }
+  .service-card p, .process-step p { font-size: 15px; }
+  .service-card h3 { font-size: clamp(18px, 5vw, 22px); }
+  .process-step h4 { font-size: clamp(16px, 4.5vw, 20px); }
+  .btn { font-size: 17px; padding: 14px 30px; }
+  .nav-drawer-link { font-size: 22px; }
+  .stat-label { font-size: 12px; }
+  .package-card li { font-size: 15px; }
+  .contact-form input, .contact-form select { font-size: 16px; }
 }
 
 @media (max-width: 480px) {
