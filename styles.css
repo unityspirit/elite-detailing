@@ -229,6 +229,13 @@ a:hover { color: var(--blue-light); }
 
 /* ======== HERO ======== */
 .hero-inner { text-align: center; }
+.hero-logo {
+  width: 120px; height: 120px;
+  object-fit: contain;
+  margin: 0 auto 16px;
+  display: block;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,.6));
+}
 
 .hero-badge {
   display: inline-block; padding: 8px 20px;
